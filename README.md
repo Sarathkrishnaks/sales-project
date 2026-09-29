@@ -74,23 +74,23 @@ Execute the main script to initialize the database, load data, and run analytica
 python main.py
 
 Analytical SQL Query explanation 
-1. Top Cities by Customer Count
-  Identifies the top 5 geographic markets with the highest customer concentration.
+ 1. Top Cities by Customer Count
+    Identifies the top 5 geographic markets with the highest customer concentration.
 
-2. High-Value Customer Identification
-   Filters customers whose cumulative spend exceeds the overall average spend per order.
+ 2. High-Value Customer Identification
+    Filters customers whose cumulative spend exceeds the overall average spend per order.
 
-3. Average Spend per City
-   Subqueries customer-level totals before aggregating the average spend per city.
+ 3. Average Spend per City
+    Subqueries customer-level totals before aggregating the average spend per city.
 
-4. Electronics Category Buyers
-   Uses EXISTS to find all customers with at least one order in the Electronics category.
+ 4. Electronics Category Buyers
+    Uses EXISTS to find all customers with at least one order in the Electronics category.
 
-5. Customer Lifetime Value (LTV) Summary
-   Displays total orders, lifetime value, average order value, and activity timeframe for top customers.
+ 5. Customer Lifetime Value (LTV) Summary
+    Displays total orders, lifetime value, average order value, and activity timeframe for top customers.
 
-6. Monthly Revenue Trend Analysis
-   Extracts year and month from order_date (formatted as DD/MM/YYYY) to track monthly orders, revenue, and AOV.
+ 6. Monthly Revenue Trend Analysis
+    Extracts year and month from order_date (formatted as DD/MM/YYYY) to track monthly orders, revenue, and AOV.
 
 
    
